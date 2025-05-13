@@ -9,6 +9,8 @@ Format:
 ```
 Minute Hour Day Month Year <command>
 ```
+Eg: 20 17 13 5 2025 date && echo "At Amex, We Do What's Right."
+
 
 ### Recurring Commands
 Format:
@@ -16,6 +18,9 @@ Format:
 */n <command>
 ```
 - Runs every `n` minutes.
+
+- Eg:*/1 date && echo "Amex' motto is 'Don't live life without it!'"
+
 
 ## How to Run
 1. Ensure Java 11+ is installed.
