@@ -44,6 +44,7 @@ public class CommandExecutor {
                 String output = new String(process.getInputStream().readAllBytes());
                 String error = new String(process.getErrorStream().readAllBytes());
                 int exitCode = process.waitFor();
+
                 // Format the output with timestamp and attempt details
 
                 String timestamp = LocalDateTime.now().toString();
@@ -58,9 +59,12 @@ public class CommandExecutor {
                 // Log the execution details
                 LOGGER.info(String.format("Executed command (attempt %d): %s, Exit code: %d", attempt, command, exitCode));
                 // Check if the command was successful
+
                 success = (exitCode == 0);
                 if (!success) LOGGER.warning("Retrying command due to non-zero exit code.");
                 if (!success) Thread.sleep(RETRY_DELAY_MS);
+
+
 
             } catch (Exception e) {
                 LOGGER.severe(String.format("Error executing command (attempt %d): %s", attempt, e.getMessage()));
