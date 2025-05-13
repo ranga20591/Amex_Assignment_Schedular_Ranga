@@ -1,8 +1,8 @@
 */1 date && echo "Amex' motto is 'Don't live life without it!'"
 
-05 17 13 5 2025 date && echo "At Amex, We Do What's Right."
+20 17 13 5 2025 date && echo "At Amex, We Do What's Right."
 
-06 17 13 5 2025 date && echo "At Amex, We Do What's Right."
+17 17 13 5 2025 date && echo "At Amex, We Do What's Right."
 
 */1 date && echo "Amex' motto is 'Don't live life without it!'"
 
